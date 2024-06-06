@@ -34,7 +34,7 @@ public class Equipo{
 		return "Equipo [ListaJugadores=" + ListaJugadores + ", capitulos=" + capitulos + "\n]";
 	}
 	
-	public static boolean ListaJugadores(double username, boolean supervivientes,boolean zombies){
+	public static boolean ListaJugadores(String username, boolean supervivientes,boolean zombies){
 		LinkedList<Jugadores> ListaJugadores=new LinkedList<Jugadores>();
 		zombies=ListaJugadores.addAll(ListaJugadores);
 		JOptionPane.showMessageDialog(null, zombies);

@@ -19,7 +19,7 @@ class Main {
 			case 0:
 				int capitulos=Integer.parseInt(JOptionPane.showInputDialog("Ingrese cuantos capitulos tiene la campaña"));
 					if (capitulos<=5) {
-						JOptionPane.showMessageDialog(null, "Se puede jugar la partida.");	
+						JOptionPane.showMessageDialog(null, "Se puede jugar la partida.");
 						int opcion1 =0;
 						String[] Opciones1 = {
 								"Zombies","Supervivientes","Salir"
@@ -29,14 +29,14 @@ class Main {
 									opcion1, opcion1, null, Opciones1, Opciones1[0]);
 							switch (opcion1) {
 							case 0:
-								Equipo.ListaJugadores(opcion,null, null).JugadoresZombies(null);
-								GestorEquipos dañototal=new GestorEquipos().JugadorZombie();
+								String username=new Jugadores(null, false, false, capitulos).JugadoresZombies(null);
+								Equipo.ListaJugadores(username, false, false);
 								
 								break;
 								
 							case 1:
-								//Jugadores supervivientes=new Jugadores(supervivientes, true, false).JugadoresSupers();
-								Equipo.ListaJugadores(opcion,null, null).JugadoresSupers(null);
+								String username=new Jugadores(null, false, false, capitulos).JugadoresSupers(username);
+								Equipo.ListaJugadores(username, true, false);
 								//supervivientes=Equipo.ListaJugadores(opcion, null);
 								//JOptionPane.showMessageDialog(null, supervivientes);
 								break;
