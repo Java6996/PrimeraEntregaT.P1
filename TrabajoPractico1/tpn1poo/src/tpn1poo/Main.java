@@ -31,7 +31,6 @@ class Main {
 							case 0:
 								Equipo.ListaJugadores(opcion,null, null).JugadoresZombies(null);
 								
-								Jugadores zombies;
 								
 								break;
 								
@@ -39,10 +38,7 @@ class Main {
 								//Jugadores supervivientes=new Jugadores(supervivientes, true, false).JugadoresSupers();
 								Equipo.ListaJugadores(opcion,null, null).JugadoresSupers(null);
 								//supervivientes=Equipo.ListaJugadores(opcion, null);
-								Equipo.ListaJugadores(opcion, null, null);
 								//JOptionPane.showMessageDialog(null, supervivientes);
-								GestorEquipos equipo=new GestorEquipos();
-								JOptionPane.showMessageDialog(null, equipo);
 								break;
 							case 2:
 								JOptionPane.showMessageDialog(null, "Saliendo de la partida.");

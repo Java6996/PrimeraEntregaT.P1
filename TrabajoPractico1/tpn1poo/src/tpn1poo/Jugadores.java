@@ -38,14 +38,14 @@ public class Jugadores {
 		return "Jugadores [username=" + username + ", vivo=" + vivo + ", eliminado=" + eliminado + "\n]";
 	}
 	public String JugadoresSupers (String username) {
-		for (int i = 0; i <=3; i++) {
+		for (int i = 1; i <=4; i++) {
 			username=JOptionPane.showInputDialog("Ingrese el nombre de usuario del jugador superviviente " + i);
 		}
 		return username;
 
 	}
 	public String JugadoresZombies (String username) {
-		for (int i = 0; i <=3; i++) {
+		for (int i = 1; i <=4; i++) {
 			username=JOptionPane.showInputDialog("Ingrese el nombre de usuario del jugador zombies " + i);
 		}
 		return username;
