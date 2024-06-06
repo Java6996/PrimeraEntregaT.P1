@@ -35,8 +35,8 @@ class Main {
 								break;
 								
 							case 1:
-								String username=new Jugadores(null, false, false, capitulos).JugadoresSupers(username);
-								Equipo.ListaJugadores(username, true, false);
+								String username1=new Jugadores(null, false, false, capitulos).JugadoresSupers(username1);
+								Equipo.ListaJugadores(username1, true, false);
 								//supervivientes=Equipo.ListaJugadores(opcion, null);
 								//JOptionPane.showMessageDialog(null, supervivientes);
 								break;

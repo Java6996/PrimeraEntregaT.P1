@@ -27,7 +27,7 @@ public class GestorEquipos{
 	}
 	 public void JugadorSuperviviente(Equipo equipo,Jugadores jugador) {
 		 int puntos=0;
-		 Equipo.ListaJugadores(null, false, false);
+		 Equipo.ListaJugadoresSupervivientes(null, true);
 		 puntos=(int)(Math.random()*600);
 		 if (puntos==500 || puntos>=500) {
 			   JOptionPane.showMessageDialog(null, "El equipo superviviente gano la partida con la cantidad de " + puntos + " puntos.");
@@ -38,7 +38,7 @@ public class GestorEquipos{
 
 	    public void JugadorZombie(Equipo equipo,Jugadores jugador) {
 	    	 int puntos=0;
-			 Equipo.ListaJugadores(null, false, false);
+			 Equipo.ListaJugadoresZombies(null, true);
 			 puntos=(int)(Math.random()*600);
 			 if (puntos==500 || puntos>=500) {
 					JOptionPane.showMessageDialog(null, "El equipo zombie gano la partida.");

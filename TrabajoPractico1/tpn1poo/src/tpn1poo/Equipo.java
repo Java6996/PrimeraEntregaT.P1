@@ -34,11 +34,18 @@ public class Equipo{
 		return "Equipo [ListaJugadores=" + ListaJugadores + ", capitulos=" + capitulos + "\n]";
 	}
 	
-	public static boolean ListaJugadores(String username, boolean supervivientes,boolean zombies){
+	public static boolean ListaJugadoresZombies(String username, boolean zombies){
 		LinkedList<Jugadores> ListaJugadores=new LinkedList<Jugadores>();
 		zombies=ListaJugadores.addAll(ListaJugadores);
 		JOptionPane.showMessageDialog(null, zombies);
 		return zombies;
+			
+	}
+	public static boolean ListaJugadoresSupervivientes(String username, boolean supervivientes){
+		LinkedList<Jugadores> ListaJugadores=new LinkedList<Jugadores>();
+		supervivientes=ListaJugadores.addAll(ListaJugadores);
+		JOptionPane.showMessageDialog(null, supervivientes);
+		return supervivientes;
 			
 	}
 }	
