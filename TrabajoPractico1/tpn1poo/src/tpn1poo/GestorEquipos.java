@@ -25,26 +25,13 @@ public class GestorEquipos{
 	public String toString() {
 		return "GestorEquipos [supervivientes=" + supervivientes + ", zombies=" + zombies + "]";
 	}
-	 public void JugadorSuperviviente(Equipo equipo,Jugadores jugador) {
-		 int puntos=0;
+	 public static void JugadorSuperviviente(Equipo equipo,Jugadores jugador) {
 		 Equipo.ListaJugadoresSupervivientes(null, true);
-		 puntos=(int)(Math.random()*600);
-		 if (puntos==500 || puntos>=500) {
-			   JOptionPane.showMessageDialog(null, "El equipo superviviente gano la partida con la cantidad de " + puntos + " puntos.");
-		} else {
-			JOptionPane.showMessageDialog(null, "El equipo superviviente perdieron la partida.");
-		}
 	    }
 
-	    public void JugadorZombie(Equipo equipo,Jugadores jugador) {
-	    	 int puntos=0;
-			 Equipo.ListaJugadoresZombies(null, true);
-			 puntos=(int)(Math.random()*600);
-			 if (puntos==500 || puntos>=500) {
-					JOptionPane.showMessageDialog(null, "El equipo zombie gano la partida.");
-			} else{
-				   JOptionPane.showMessageDialog(null, "El equipo zombie perdio la partida.");
-			}
+	    public static void JugadorZombie(Equipo equipo,Jugadores jugador) {
+	    	Equipo.ListaJugadoresSupervivientes(null, false);
+			 
 	    }
 	    
 	
