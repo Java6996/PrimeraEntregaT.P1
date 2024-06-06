@@ -30,7 +30,7 @@ class Main {
 							switch (opcion1) {
 							case 0:
 								Equipo.ListaJugadores(opcion,null, null).JugadoresZombies(null);
-								
+								GestorEquipos dañototal=new GestorEquipos().JugadorZombie();
 								
 								break;
 								

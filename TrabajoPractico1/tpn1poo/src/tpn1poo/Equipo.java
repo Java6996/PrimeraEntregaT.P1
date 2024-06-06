@@ -31,14 +31,14 @@ public class Equipo{
 	}
 	@Override
 	public String toString() {
-		return "Equipo [ListaJugadores=" + ListaJugadores + ", capitulos=" + capitulos + "]";
+		return "Equipo [ListaJugadores=" + ListaJugadores + ", capitulos=" + capitulos + "\n]";
 	}
 	
-	public static Jugadores ListaJugadores(double username, LinkedList supervivientes,LinkedList zombies){
-		LinkedList<Jugadores> ListaJugadores1=new LinkedList<Jugadores>();
-		ListaJugadores1.addAll(ListaJugadores1);
-		Jugadores jugadores=new Jugadores(null, true, false, null);
-		return jugadores;
+	public static boolean ListaJugadores(double username, boolean supervivientes,boolean zombies){
+		LinkedList<Jugadores> ListaJugadores=new LinkedList<Jugadores>();
+		zombies=ListaJugadores.addAll(ListaJugadores);
+		JOptionPane.showMessageDialog(null, zombies);
+		return zombies;
 			
 	}
 }	

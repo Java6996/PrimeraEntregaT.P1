@@ -37,7 +37,14 @@ public class GestorEquipos{
 	    }
 
 	    public void JugadorZombie(Equipo equipo,Jugadores jugador) {
-			 Equipo.ListaJugadores(0,null, null);
+	    	 int puntos=0;
+			 Equipo.ListaJugadores(0, null, null);
+			 puntos=(int)(Math.random()*600);
+			 if (puntos>=500) {
+					JOptionPane.showMessageDialog(null, "El equipo zombie gano la partida.");
+			} else{
+				   JOptionPane.showMessageDialog(null, "El equipo zombie perdio la partida.");
+			}
 	    }
 	    
 	
